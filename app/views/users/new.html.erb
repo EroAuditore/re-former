@@ -1,7 +1,6 @@
 <h1>Users View</h1>
 
-
- <!--<form action="/users" method="post" accept-charset="utf-8">
+ <!-- <form action="/users" method="post" accept-charset="utf-8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> 
   <label for="username">User name:</label>
   <input type="text" id="username" name="user[username]"><br><br>
@@ -12,7 +11,7 @@
   <input type="submit" value="Submit">
 </form> -->
 
-<%= form_tag('/users') do %>
+<!-- <%= form_tag('/users') do %>
     <%= label_tag 'User name:' %> 
     <%= text_field_tag 'username' %> <br><br>
 
@@ -23,4 +22,17 @@
     <%= password_field_tag 'password' %> <br><br>
 
     <%= submit_tag %>
+<% end %> -->
+
+<%= form_with model: @user do |form| %>
+    <%= form.label 'Username:' %>
+    <%= form.text_field :username, value: 'admin_example' %><br><br>
+
+    <%= form.label 'Email:' %>
+    <%= form.text_field :email, placeholder: 'example@example.com' %><br><br>
+
+    <%= form.label 'Password:' %>
+    <%= form.password_field :password%><br><br>
+
+    <%= form.submit "Create" %>
 <% end %>
