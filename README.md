@@ -65,6 +65,12 @@ rails server
 http://127.0.0.1:3000/users/new
 ```
 
+- Edit user
+
+```
+http://127.0.0.1:3000/users/:id/edit
+```
+
 ## Authors
 
 👤 **Eduardo Auditore**
