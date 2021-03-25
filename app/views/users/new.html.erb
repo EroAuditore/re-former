@@ -24,15 +24,4 @@
     <%= submit_tag %>
 <% end %> -->
 
-<%= form_with(model: @user, local: true  ) do |form| %>
-    <%= form.label 'Username:' %>
-    <%= form.text_field :username, placeholder: 'admin_example', required: true %><br><br>
-
-    <%= form.label 'Email:' %>
-    <%= form.text_field :email, placeholder: 'example@example.com'  %><br><br>
-
-    <%= form.label 'Password:' %>
-    <%= form.password_field :password%><br><br>
-
-    <%= form.submit "Create" %>
-<% end %>
+ <%= render 'form' %>

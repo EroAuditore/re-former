@@ -1,14 +1,3 @@
 <h1>Edit Users </h1>
 
-<%= form_with(model: @user, local: true  ) do|form| %>
-    <%= form.label 'Username:' %>
-    <%= form.text_field :username, required: true %><br><br>
-
-    <%= form.label 'Email:' %>
-    <%= form.text_field :email, placeholder: @user.email %><br><br>
-
-    <%= form.label 'Password:' %>
-    <%= form.password_field :password%><br><br>
-
-    <%= form.submit "Update" %>
-<% end %>
+<%= render 'form' %>
