@@ -1,6 +1,6 @@
 <h1>Edit Users </h1>
 
-<%= form_with model: @user do |form| %>
+<%= form_with(model: @user, local: true  ) do|form| %>
     <%= form.label 'Username:' %>
     <%= form.text_field :username, required: true %><br><br>
 
