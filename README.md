@@ -26,7 +26,7 @@ included:
 - To clone this repository, open your Terminal and execute the following command:
 
 ```
-git clone https://github.com/EroAuditore/micro_reddit.git
+git clone https://github.com/eroauditore/re-former.git
 ```
 
 ### Run
@@ -34,7 +34,7 @@ git clone https://github.com/EroAuditore/micro_reddit.git
 - Change into the folder
 
 ```
-cd micro_reddit
+cd re-former
 ```
 
 - Install gems
@@ -75,7 +75,7 @@ http://127.0.0.1:3000/users/:id/edit
 
 👤 **Eduardo Auditore**
 
-- GitHub: [@EroAuditore](https://github.com/EroAuditore)
+- GitHub: [@EroAuditore](https://github.com/eroauditore)
 - LinkedIn: [Eduardo Auditore](https://www.linkedin.com/in/eroauditore/)
 
 👤 **Carlos González**
